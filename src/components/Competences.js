@@ -4,7 +4,7 @@ function Competences() {
     const [competences, setCompetences] = useState([]);
 
     useEffect(() => {
-        fetch('/api/competences')
+        fetch('http://localhost:5106/api/competences')
         .then(response => response.json())
     .then(data => setCompetences(data))
     .catch(error => console.error('Error fetching competences:', error));
