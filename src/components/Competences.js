@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/components/Competences.css';
 
-//useEffect : Permet de lancer du code après le rendu du composant.
-//useState : Gérer l'état d'un composant, lui permet d'avoir une mémoire interne.
-
 function Competences() {
     const [competences, setCompetences] = useState([]);
 
     useEffect(() => {
         fetch('http://localhost:5106/api/competences')
         .then(response => response.json())
-    .then(data => setCompetences(data))
-    .catch(error => console.error('Error fetching competences:', error));
+        .then(data => setCompetences(data))
+        .catch(error => console.error('Error fetching competences:', error));
     }, []);
 
     return (
