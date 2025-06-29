@@ -7,17 +7,17 @@ function Intro() {
             <div className="about-intro-component">
                 <h1>Thiméa Holleville</h1>
                 <p className="subtitle">Développeuse Full Stack</p>
-                <p>
+                <p className='intro-txt'>
                     Actuellement développeuse back-end Java en alternance chez CGI, je termine cette année mon <strong>Master 2 Informatique
                     – Communication et Intégration Multimédia</strong> à l’Université Lumière Lyon 2. Ayant déménagé à Lyon pour mes études, 
                     je souhaite désormais m’installer à <strong>Caen</strong> afin de me rapprocher de ma famille.Je suis donc à la recherche d’un poste
                     de <strong>développeuse full stack à partir de mi-octobre</strong>, idéalement situé à Caen ou dans ses environs.
                 </p>
                 <div className="intro-buttons">
-                    <button className="btn-minimal primary">
+                    <button className="btn btn-custom-green">
                         Mes Projets
                     </button>
-                    <button className="btn-minimal">
+                    <button className="btn btn-custom-green">
                         Me Contacter
                     </button>
                 </div>
